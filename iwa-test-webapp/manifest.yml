@@ -1,0 +1,11 @@
+applications:
+- name: iwatestapp
+  buildpacks:
+  - hwc_buildpack
+  disk_quota: 1G
+  instances: 1
+  memory: 1G
+  routes:
+  - route: iwatestapp.apps.pcf.az.deployfast.io
+  stack: windows2016
+  path: C:\kaa\repos\iwa-test-webapp\iwa-test-webapp\bin\Release\Publish
